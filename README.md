@@ -1,19 +1,19 @@
 # Problema N-Queen Cuenca
 ---
-Solución del problema N-Queen usando algortimo genetico
+Solución del problema N-Queen usando algoritmo genético
 
-* El objetivo es colocar N reinas en un tablero de ajedrez de N x N, de tal manera de que las reinas no se ataquen entre ellas
-* Se decidio usar un algoritmo genetico al ser un problema de maximización 
+* El objetivo es colocar N reinas en un tablero de ajedrez de N x N, de tal manera  que las reinas no se ataquen entre ellas
+* Se uttiliza un algoritmo genético al ser un problema de maximización 
 
 ---
 ## Algoritmo
 
-Se simula una evolución genetica de la siguiente manera:
+Se simula una evolución genética de la siguiente manera:
 
 1. Inicialización de la población.
 2. Evaluación de los individuos de la población.
 3. Ordenamiento de los mejores.
-4. Muerte de la mitad de individuos menos optimos.
+4. Muerte de la mitad de individuos menos óptimos.
 5. Cruza
 6. Mutación
 
@@ -22,7 +22,7 @@ El proceso se repite del paso 2 hasta el 6 hasta encontar una solución
 ---
 ## Función de Aptitud
 
-Caracterizaremos la aptitud como un valor máximo. A pesar de que un menor número de enfrentamientos significa mayor aptitud, para fines de implementación, consideramos los valores máximos de aptitud. Esto se puede hacer porque restamos el número de enfrentamientos a los enfrenttamientos totales posibles
+Caracterizaremos la aptitud como un valor máximo. A pesar de que un menor número de enfrentamientos significa mayor aptitud, para fines de implementación, consideramos los valores máximos de aptitud. Esto se puede hacer porque restamos el número de enfrentamientos a los enfrentamientos totales posibles
 
 ```python
 clashes = 0;

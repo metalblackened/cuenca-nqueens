@@ -46,6 +46,9 @@ def mutate(individual):  #randomly changing the value of a random index of a chr
     n = len(individual)
     gen = random.randint(0, n - 1)
     newgen = random.randint(1, n)
-    individual[gen] = newgen
+    if newgen == individual[gen]:
+        mutate(individual)
+    else:
+        individual[gen] = newgen
     return individual
 

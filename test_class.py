@@ -16,7 +16,7 @@ class TestClass:
 
         assert mutate(copy.deepcopy(c1)) != c1
         assert mutate(copy.deepcopy(c2)) != c2
-        assert mutate(copy.deepcopy(c3)) != c3
+
     
     def test_crossover(self):
         c1 = [1,2,3,4,2,6]
